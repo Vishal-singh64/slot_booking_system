@@ -1,0 +1,81 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cito cab",
+    "dateExported": "2023-07-30T14:59:02.961Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0f82cb5f-6b95-470b-9aea-d772a05d6fef",
+            "colId": "c37b91bd-fbd9-4376-a424-f780bd653c5d",
+            "containerId": "",
+            "name": "add slots",
+            "url": "localhost:3000/api/slot",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-30T11:46:45.784Z",
+            "modified": "2023-07-30T14:53:23.713Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_Id\":1,\n  \"slot_Date\":\"2023-08-09\",\n  \"slot_Start_Time\":\"09:00:00\",\n  \"slot_End_Time\":\"10:00:00\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "17957796-2a77-4ed6-a8b6-ed04e4a86908",
+            "colId": "c37b91bd-fbd9-4376-a424-f780bd653c5d",
+            "containerId": "",
+            "name": "get Slots",
+            "url": "localhost:3000/api/slot",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-30T11:55:54.560Z",
+            "modified": "2023-07-30T12:13:37.284Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cd1bdb1f-ac67-4984-a32c-909ac96475b0",
+            "colId": "c37b91bd-fbd9-4376-a424-f780bd653c5d",
+            "containerId": "",
+            "name": "update Slot",
+            "url": "localhost:3000/api/slot/2",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2023-07-30T12:08:30.099Z",
+            "modified": "2023-07-30T12:13:30.538Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"slot_Date\":\"2023-08-08\",\n  \"slot_Start_Time\":\"06:00:00\",\n  \"slot_End_Time\":\"07:00:00\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
